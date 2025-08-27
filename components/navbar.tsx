@@ -29,7 +29,7 @@ export function Navbar({ isOpen, setIsOpen, activeSection, scrollToSection }: an
          <div
             className={`fixed top-10 left-0 right-0 z-50 transition-all duration-300 ${
                scrolled ? 'glass-card border-white/50' : 'bg-transparent border-white/25'
-            } max-w-lg border rounded-lg mx-auto px-1 sm:px-2 lg:px-4`}
+            } w-fit border rounded-lg ml-4 md:mx-auto px-1 sm:px-2 lg:px-4`}
          >
             <div className='flex items-center justify-center h-12'>
                {/* Desktop Navigation */}
@@ -73,17 +73,19 @@ export function Navbar({ isOpen, setIsOpen, activeSection, scrollToSection }: an
                   exit={{ opacity: 0, height: 0 }}
                   className='md:hidden glass-card border-t border-border'
                >
-                  <div className='px-2 pt-2 pb-3 space-y-1'>
-                     {navItems.map((item) => (
-                        <motion.button
-                           key={item.name}
-                           onClick={() => scrollToSection(item.href)}
-                           className='text-foreground hover:text-primary block px-3 py-2 text-base font-medium w-full text-left transition-colors'
-                           whileHover={{ x: 10 }}
-                        >
-                           {item.name}
-                        </motion.button>
-                     ))}
+                  <div className='px-4 pt-28 pb-3 space-y-1'>
+                     <div className=' border border-white/20 rounded-md bg-slate-800/25 p-4'>
+                        {navItems.map((item) => (
+                           <motion.button
+                              key={item.name}
+                              onClick={() => scrollToSection(item.href)}
+                              className='text-foreground hover:text-primary block px-3 py-2 text-base font-medium w-full text-left transition-colors'
+                              whileHover={{ x: 10 }}
+                           >
+                              {item.name}
+                           </motion.button>
+                        ))}
+                     </div>
                   </div>
                </motion.div>
             )}

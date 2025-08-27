@@ -6,7 +6,7 @@ import { TechStackAnimation } from './tech-stack-animation';
 
 export function HeroSection({ scrollToSection }: any) {
    return (
-      <section id='home' className='min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8'>
+      <section id='home' className='min-h-screen py-32 flex items-center justify-center px-4 sm:px-6 lg:px-8'>
          <div className='max-w-6xl mx-auto w-full'>
             <div className='grid lg:grid-cols-2 gap-12 items-center'>
                {/* Left Content */}
