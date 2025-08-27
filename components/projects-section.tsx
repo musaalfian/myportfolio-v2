@@ -37,7 +37,7 @@ const projects = [
 
 export function ProjectsSection() {
    return (
-      <section id='projects' className='pt-36 px-4 sm:px-6 lg:px-8'>
+      <section id='projects' className='pt-36 px-4 sm:px-6 lg:px-8 bg-slate-900/50'>
          <div className='max-w-7xl mx-auto'>
             <motion.div
                initial={{ opacity: 0, y: 20 }}
@@ -64,7 +64,7 @@ export function ProjectsSection() {
                      transition={{ duration: 0.4 }}
                      whileHover={{ y: -10 }}
                   >
-                     <Card className='glass-card glow-purple-hover h-full border border-white/20 hover:border-white/40 transition-all duration-300 overflow-hidden'>
+                     <Card className='glass-card bg-slate-950 glow-purple-hover h-full border border-white/20 hover:border-white/40 transition-all duration-300 overflow-hidden'>
                         <div className='relative overflow-hidden'>
                            <motion.img
                               src={project.image}
@@ -95,7 +95,7 @@ export function ProjectsSection() {
                            <div className='flex gap-3'>
                               <Button
                                  size='sm'
-                                 className='flex-1 glass glow-purple-hover bg-primary hover:bg-primary/90'
+                                 className='flex-1 glass py-5 glow-purple-hover border border-white/10 bg-purple-900/70 hover:bg-purple-900/90'
                               >
                                  <ExternalLink className='w-4 h-4 mr-2' />
                                  Live Demo
@@ -103,7 +103,7 @@ export function ProjectsSection() {
                               <Button
                                  size='sm'
                                  variant='outline'
-                                 className='glass border-primary/50 hover:bg-primary/10 bg-transparent'
+                                 className='glass border-primary/50 py-5 hover:bg-primary/10 bg-transparent'
                               >
                                  <Github className='w-4 h-4' />
                               </Button>

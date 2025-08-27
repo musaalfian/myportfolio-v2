@@ -6,7 +6,10 @@ import { TechStackAnimation } from './tech-stack-animation';
 
 export function HeroSection({ scrollToSection }: any) {
    return (
-      <section id='home' className='min-h-screen py-32 flex items-center justify-center px-4 sm:px-6 lg:px-8'>
+      <section
+         id='home'
+         className='min-h-screen py-32 flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-900/50 to-violet-900/35'
+      >
          <div className='max-w-6xl mx-auto w-full'>
             <div className='grid lg:grid-cols-2 gap-12 items-center'>
                {/* Left Content */}
@@ -48,7 +51,7 @@ export function HeroSection({ scrollToSection }: any) {
                      <Button
                         size='lg'
                         onClick={() => scrollToSection('#projects')}
-                        className='glass-card glow-purple-hover text-lg px-8 py-6 bg-primary hover:bg-primary/90'
+                        className='glass-card glow-purple-hover text-base px-4 py-6 bg-purple-900/70 hover:bg-purple-900/90'
                      >
                         Lihat Proyek Saya
                      </Button>
@@ -56,7 +59,7 @@ export function HeroSection({ scrollToSection }: any) {
                         size='lg'
                         variant='outline'
                         onClick={() => scrollToSection('#contact')}
-                        className='glass text-lg px-8 py-6 border-primary/50 hover:bg-primary/10'
+                        className='glass text-base px-4 py-6 border-white/30 hover:bg-slate-800 hover:text-white bg-slate-900'
                      >
                         Hubungi Saya
                      </Button>

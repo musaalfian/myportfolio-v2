@@ -11,7 +11,7 @@ const socialLinks = [
 
 export function Footer() {
    return (
-      <footer className='py-12 px-4 pt-32 sm:px-6 lg:px-8 border-t border-border/20'>
+      <footer className='py-12 px-4 sm:px-6 lg:px-8 border-t border-white/20 bg-slate-900/50'>
          <div className='max-w-7xl mx-auto'>
             <motion.div
                initial={{ opacity: 0, y: 20 }}

@@ -33,7 +33,10 @@ const experiences = [
 
 export function ExperienceSection() {
    return (
-      <section id='experience' className='pt-36 px-4 sm:px-6 lg:px-8'>
+      <section
+         id='experience'
+         className='pt-36 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-violet-900/35 to-slate-900/50'
+      >
          <div className='max-w-4xl mx-auto'>
             <motion.div
                initial={{ opacity: 0, y: 20 }}
@@ -57,7 +60,7 @@ export function ExperienceSection() {
                      viewport={{ once: true }}
                      transition={{ duration: 0.3 }}
                   >
-                     <Card className='glass-card glow-purple-hover border border-white/20 hover:border-white/40 transition-all duration-300'>
+                     <Card className='glass-card bg-slate-950 glow-purple-hover border border-white/20 hover:border-white/40 transition-all duration-300'>
                         <CardContent className='p-8'>
                            <div className='flex flex-col md:flex-row md:items-center md:justify-between mb-4'>
                               <div>

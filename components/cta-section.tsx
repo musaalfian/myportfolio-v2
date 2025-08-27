@@ -6,14 +6,14 @@ import { Mail, Linkedin } from 'lucide-react';
 
 export function CTASection() {
    return (
-      <section id='contact' className='pt-36 px-4 sm:px-6 lg:px-8'>
+      <section id='contact' className='py-36 px-4 sm:px-6 lg:px-8 bg-slate-900/50'>
          <div className='max-w-4xl mx-auto'>
             <motion.div
                initial={{ opacity: 0, y: 50 }}
                whileInView={{ opacity: 1, y: 0 }}
                viewport={{ once: true }}
                transition={{ duration: 0.8 }}
-               className='glass-card glow-purple text-center p-12 rounded-2xl'
+               className='glass-card border border-white/25 bg-slate-950 glow-purple text-center p-12 rounded-2xl'
             >
                <motion.h2
                   initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ export function CTASection() {
                >
                   <Button
                      size='lg'
-                     className='glass glow-purple-hover bg-primary hover:bg-primary/90 text-lg px-8 py-6'
+                     className='glass glow-purple-hover bg-purple-900/70 hover:bg-purple-900/90 text-base px-8 py-6'
                   >
                      <Mail className='w-5 h-5 mr-2' />
                      Hubungi Saya via Email
@@ -53,7 +53,7 @@ export function CTASection() {
                   <Button
                      size='lg'
                      variant='outline'
-                     className='glass border-primary/50 hover:bg-primary/10 text-lg px-8 py-6 bg-transparent'
+                     className='glass  text-base px-8 py-6 border-white/30 hover:bg-slate-800 hover:text-white bg-slate-900'
                   >
                      <Linkedin className='w-5 h-5 mr-2' />
                      Lihat LinkedIn Saya

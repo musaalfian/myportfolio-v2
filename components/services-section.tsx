@@ -24,7 +24,7 @@ const services = [
 
 export function ServicesSection() {
    return (
-      <section id='services' className='pt-0 px-4 sm:px-6 lg:px-8'>
+      <section id='services' className='pt-0 px-4 sm:px-6 lg:px-8 bg-violet-900/35'>
          <div className='max-w-6xl mx-auto'>
             <motion.div
                initial={{ opacity: 0, y: 20 }}
@@ -51,7 +51,7 @@ export function ServicesSection() {
                      transition={{ duration: 0.3 }}
                      whileHover={{ y: -10 }}
                   >
-                     <Card className='glass-card glow-purple-hover border border-white/25 hover:border-white/50 h-full rounded-xl transition-all duration-300'>
+                     <Card className='glass-card glow-purple-hover bg-slate-950 border border-white/25 hover:border-white/50 h-full rounded-xl transition-all duration-300'>
                         <CardContent className='p-8 text-center'>
                            <motion.div
                               className='w-16 h-16 mx-auto mb-6 rounded-full glass flex items-center justify-center'
