@@ -22,7 +22,7 @@ export function Footer() {
                className='flex flex-col md:flex-row items-center justify-between border-t gap-4 border-white/20 pt-12'
             >
                <div className='md:mb-0'>
-                  <h3 className='mb-2 text-lg font-bold text-white text-center md:text-left'>Musa Alfian Maulana</h3>
+                  <h3 className='mb-2 text-lg font-bold text-white text-center md:texle'>Musa Alfian Maulana</h3>
                   <p className='text-muted-foreground text-sm'>© 2025 Musa. All rights reserved.</p>
                </div>
 
@@ -31,6 +31,7 @@ export function Footer() {
                      <motion.a
                         key={link.label}
                         href={link.href}
+                        target='_blank'
                         className='w-10 h-10 rounded-full glass flex items-center justify-center text-muted-foreground hover:text-primary transition-colors glow-purple-hover'
                         whileHover={{ scale: 1.1, y: -2 }}
                         whileTap={{ scale: 0.95 }}
@@ -39,10 +40,8 @@ export function Footer() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
                      >
-                        <Link href={link.href} target='_blank'>
-                           <link.icon className='w-5 h-5' />
-                           <span className='sr-only'>{link.label}</span>
-                        </Link>
+                        <link.icon className='w-5 h-5' />
+                        <span className='sr-only'>{link.label}</span>
                      </motion.a>
                   ))}
                </div>

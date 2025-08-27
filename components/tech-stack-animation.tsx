@@ -92,7 +92,7 @@ export function TechStackAnimation() {
          })}
 
          {/* Floating Particles */}
-         {Array.from({ length: 8 }).map((_, i) => (
+         {/* {Array.from({ length: 8 }).map((_, i) => (
             <motion.div
                key={i}
                className='absolute w-2 h-2 rounded-full bg-primary/30'
@@ -110,7 +110,7 @@ export function TechStackAnimation() {
                   delay: Math.random() * 2,
                }}
             />
-         ))}
+         ))} */}
       </div>
    );
 }
