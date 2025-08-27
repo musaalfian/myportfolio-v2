@@ -13,8 +13,7 @@ const navItems = [
    { name: 'Contact', href: '#contact' },
 ];
 
-export function Navbar() {
-   const [isOpen, setIsOpen] = useState(false);
+export function Navbar({ isOpen, setIsOpen, activeSection, scrollToSection }: any) {
    const [scrolled, setScrolled] = useState(false);
 
    useEffect(() => {
@@ -25,36 +24,24 @@ export function Navbar() {
       return () => window.removeEventListener('scroll', handleScroll);
    }, []);
 
-   const scrollToSection = (href: string) => {
-      const element = document.querySelector(href);
-      if (element) {
-         element.scrollIntoView({ behavior: 'smooth' });
-      }
-      setIsOpen(false);
-   };
-
    return (
-      <motion.nav
-         initial={{ y: -100 }}
-         animate={{ y: 0 }}
-         // className={`fixed top-0 left-0 right-0 z-50 p-6 transition-all duration-300 ${
-         //    scrolled ? 'glass-card' : 'bg-transparent'
-         // }`}
-      >
+      <motion.nav initial={{ y: -100 }} animate={{ y: 0 }}>
          <div
             className={`fixed top-10 left-0 right-0 z-50 transition-all duration-300 ${
                scrolled ? 'glass-card border-white/50' : 'bg-transparent border-white/25'
-            } max-w-xl border rounded-lg mx-auto px-2 sm:px-4 lg:px-6`}
+            } max-w-lg border rounded-lg mx-auto px-1 sm:px-2 lg:px-4`}
          >
-            <div className='flex items-center justify-center h-16'>
+            <div className='flex items-center justify-center h-12'>
                {/* Desktop Navigation */}
                <div className='hidden md:block'>
-                  <div className='flex items-baseline space-x-8'>
+                  <div className='flex items-baseline space-x-4'>
                      {navItems.map((item) => (
                         <motion.button
                            key={item.name}
                            onClick={() => scrollToSection(item.href)}
-                           className='text-foreground hover:text-primary px-3 py-2 text-sm font-medium transition-colors relative group'
+                           className={`text-foreground hover:text-primary px-3 py-2 text-sm font-medium transition-colors relative group ${
+                              activeSection === item.href ? 'text-primary' : ''
+                           }`}
                            whileHover={{ y: -2 }}
                         >
                            {item.name}
