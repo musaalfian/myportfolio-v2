@@ -16,10 +16,27 @@ const projects = [
       githubUrl: '#',
    },
    {
+      title: 'Sistem Audit Mutu Internal (SIAMI)',
+      description: 'Aplikasi berbasis website yang digunakan untuk melakukan audit mutu internal FK Undip.',
+      image: '/siami.jpg',
+      technologies: ['Laravel 9', 'JQuery', 'Bootstrap', 'MySQL'],
+      liveUrl: '#',
+      githubUrl: '#',
+   },
+   {
       title: 'Point of Sales (POS)',
       description: 'Aplikasi untuk mengelola barang, transaksi, dan laporan penjualan apotek.',
       image: '/pos-apotek.png',
       technologies: ['Laravel 9', 'JQuery', 'Bootstrap', 'Chart.js', 'MySQL'],
+      liveUrl: '#',
+      githubUrl: '#',
+   },
+   {
+      title: 'E-Catalog',
+      description:
+         'Platform e-katalog untuk jual beli tissue. Tersedia berbagai pilihan produk dan pembayaran direct ke WhatsApp.',
+      image: '/tisumurah.png',
+      technologies: ['Laravel 8', 'JQuery', 'MySQL', 'Bootstrap'],
       liveUrl: '#',
       githubUrl: '#',
    },
