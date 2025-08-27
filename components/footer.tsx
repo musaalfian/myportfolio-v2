@@ -22,7 +22,7 @@ export function Footer() {
                className='flex flex-col md:flex-row items-center justify-between border-t gap-4 border-white/20 pt-12'
             >
                <div className='md:mb-0'>
-                  <h3 className='mb-2 text-lg font-bold text-white text-center md:texle'>Musa Alfian Maulana</h3>
+                  <h3 className='mb-2 text-lg font-bold text-white text-center md:text-left'>Musa Alfian Maulana</h3>
                   <p className='text-muted-foreground text-sm'>© 2025 Musa. All rights reserved.</p>
                </div>
 
