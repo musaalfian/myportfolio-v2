@@ -8,28 +8,26 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
    {
-      title: 'E-Commerce Platform',
-      description:
-         'Platform e-commerce modern dengan fitur real-time inventory, payment gateway, dan admin dashboard yang komprehensif.',
-      image: '/modern-ecommerce-dashboard.png',
-      technologies: ['Next.js', 'Laravel', 'MySQL', 'Stripe'],
+      title: 'Sistem Manajemen Surat (SIMAS)',
+      description: 'Platform manajemen surat digital dengan fitur pengarsipan, disposisi, dan notifikasi yang efisien.',
+      image: '/simas.png',
+      technologies: ['Laravel 11', 'JQuery', 'Chart.js', 'Tailwind CSS', 'MySQL'],
       liveUrl: '#',
       githubUrl: '#',
    },
    {
-      title: 'Task Management System',
-      description:
-         'Aplikasi manajemen proyek dengan fitur kolaborasi tim, tracking progress, dan reporting yang detail.',
-      image: '/task-management-interface.png',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
+      title: 'Point of Sales (POS)',
+      description: 'Aplikasi untuk mengelola barang, transaksi, dan laporan penjualan apotek.',
+      image: '/pos-apotek.png',
+      technologies: ['Laravel 9', 'JQuery', 'Bootstrap', 'Chart.js', 'MySQL'],
       liveUrl: '#',
       githubUrl: '#',
    },
    {
-      title: 'Learning Management System',
+      title: 'Bandikmenti Batang',
       description: 'Platform pembelajaran online dengan video streaming, quiz interaktif, dan sistem sertifikasi.',
-      image: '/learning-platform-interface.png',
-      technologies: ['Next.js', 'PHP', 'PostgreSQL', 'AWS'],
+      image: '/bandikmentibatang.png',
+      technologies: ['CodeIgniter', 'JavaScript', 'MySQL', 'Bootstrap'],
       liveUrl: '#',
       githubUrl: '#',
    },
@@ -64,19 +62,19 @@ export function ProjectsSection() {
                      transition={{ duration: 0.4 }}
                      whileHover={{ y: -10 }}
                   >
-                     <Card className='glass-card bg-slate-950 glow-purple-hover h-full border border-white/20 hover:border-white/40 transition-all duration-300 overflow-hidden'>
+                     <Card className='glass-card bg-slate-950 glow-purple-hover h-full border border-white/20 hover:border-white/40 transition-all duration-300 overflow-hidden py-0'>
                         <div className='relative overflow-hidden'>
                            <motion.img
                               src={project.image}
                               alt={project.title}
-                              className='w-full h-48 object-cover'
+                              className='w-full h-56 object-cover'
                               whileHover={{ scale: 1.05 }}
                               transition={{ duration: 0.3 }}
                            />
                            <div className='absolute inset-0 bg-gradient-to-t from-black/50 to-transparent' />
                         </div>
 
-                        <CardContent className='p-6'>
+                        <CardContent className='pt-0 pb-6'>
                            <h3 className='text-xl font-semibold mb-3 text-foreground'>{project.title}</h3>
                            <p className='text-muted-foreground mb-4 leading-relaxed'>{project.description}</p>
 

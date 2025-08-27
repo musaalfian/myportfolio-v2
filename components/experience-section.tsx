@@ -8,26 +8,26 @@ const experiences = [
    {
       position: 'Pengelola Sistem dan Jaringan',
       company: 'Fakultas Kedokteran Universitas Diponegoro',
-      period: '2022 - Sekarang',
+      period: 'Sept 2022 - Sekarang',
       description:
-         'Memimpin pengembangan aplikasi e-commerce dengan Next.js dan Laravel. Meningkatkan performa aplikasi hingga 40% dan mengelola tim developer.',
-      technologies: ['Next.js', 'Laravel', 'MySQL', 'Redis'],
+         'Bertanggung jawab atas pengembangan sistem informasi. Meningkatkan efektifitas dan efisiensi dalam membantu proses bisnis di FK UNDIP.',
+      technologies: ['Next.js', 'React', 'TypeScript', 'Laravel', 'MySQL'],
    },
    {
-      position: 'Fullstack Web Developer',
-      company: 'Digital Solutions',
-      period: '2021 - 2022',
+      position: 'Frontend Web Developer',
+      company: 'CV. Laksana Abadi Batang',
+      period: 'Sept 2021 - Nov 2022',
       description:
-         'Mengembangkan sistem manajemen inventory dan CRM untuk klien enterprise. Bertanggung jawab atas arsitektur database dan API development.',
-      technologies: ['React', 'PHP', 'PostgreSQL', 'Docker'],
+         'Mengembangkan landing page CV. Laksana Abadi Batang untuk meningkatkan visibilitas dan menarik pelanggan. Memastikan tampilan yang responsif dan user friendly.',
+      technologies: ['Laravel', 'MySQL', 'PHP', 'JavaScript', 'Jquery', 'Figma'],
    },
    {
       position: 'Frontend Developer',
-      company: 'StartupXYZ',
-      period: '2020 - 2021',
+      company: 'Dinas Pendidikan dan Kebudayaan Kabupaten Batang',
+      period: 'Feb 2022 - Mei 2022',
       description:
-         'Membangun interface user yang responsive dan interaktif untuk aplikasi fintech. Kolaborasi dengan tim design untuk implementasi UI/UX.',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Figma'],
+         'Membangun interface user yang responsive dan interaktif untuk aplikasi penyaluran beasiswa bagi pelajar di Kabupaten Batang. Kolaborasi dengan developer untuk implementasi UI/UX.',
+      technologies: ['CodeIgniter', 'MySQL', 'JavaScript', 'Figma'],
    },
 ];
 
